@@ -65,7 +65,10 @@
 #endif
 
 #ifndef off_t
+#ifndef _OFF_T_DEFINED
 # define off_t long int
+# define _OFF_T_DEFINED
+#endif
 #endif
 
 #endif /* PORTABLE_H */
