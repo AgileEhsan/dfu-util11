@@ -41,16 +41,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)..\..\libusbx\examples\getopt;$(SolutionDir)..\..\libusbx\libusb;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\libusb\examples\getopt;$(SolutionDir)..\..\libusb\libusb;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\$(Platform)\$(ProjectName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
-    <LibraryPath>$(SolutionDir)..\$(Platform)\$(ProjectName)\$(Configuration)\dll;$(SolutionDir)..\..\libusbx\$(Platform)\$(Configuration)\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)..\$(Platform)\$(ProjectName)\$(Configuration)\dll;$(SolutionDir)..\..\libusb\$(Platform)\$(Configuration)\lib;$(LibraryPath)</LibraryPath>
     <ReferencePath>$(VCInstallDir)atlmfc\lib;$(VCInstallDir)lib</ReferencePath>
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
-    <IncludePath>$(SolutionDir)..\..\libusbx\examples\getopt;$(SolutionDir)..\..\libusbx\libusb;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\libusb\examples\getopt;$(SolutionDir)..\..\libusb\libusb;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\$(Platform)\$(ProjectName)\$(Configuration)\dll;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)..\$(Platform)\$(ProjectName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
@@ -91,10 +91,10 @@
     <ClInclude Include="..\src\portable.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\libusbx\msvc\getopt_2010.vcxproj">
+    <ProjectReference Include="..\..\libusb\msvc\getopt_2019.vcxproj">
       <Project>{a2169bc8-cf99-40bf-83f3-b0e38f7067bd}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\libusbx\msvc\libusb_static_2010.vcxproj">
+    <ProjectReference Include="..\..\libusb\msvc\libusb_static_2019.vcxproj">
       <Project>{349ee8f9-7d25-4909-aaf5-ff3fade72187}</Project>
     </ProjectReference>
   </ItemGroup>

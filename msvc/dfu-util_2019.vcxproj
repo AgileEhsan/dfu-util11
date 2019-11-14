@@ -41,16 +41,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)..\..\libusbx\examples\getopt;$(SolutionDir)..\..\libusbx\libusb;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\libusb\examples\getopt;$(SolutionDir)..\..\libusb\libusb;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\$(Platform)\$(ProjectName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
-    <LibraryPath>$(SolutionDir)..\$(Platform)\getopt\$(Configuration);$(SolutionDir)..\..\libusbx\$(Platform)\$(Configuration)\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)..\$(Platform)\getopt\$(Configuration);$(SolutionDir)..\..\libusb\$(Platform)\$(Configuration)\lib;$(LibraryPath)</LibraryPath>
     <ReferencePath>$(VCInstallDir)atlmfc\lib;$(VCInstallDir)lib</ReferencePath>
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
-    <IncludePath>$(SolutionDir)..\..\libusbx\examples\getopt;$(SolutionDir)..\..\libusbx\libusb;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\libusb\examples\getopt;$(SolutionDir)..\..\libusb\libusb;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\$(Platform)\getopt\$(Configuration);$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)..\$(Platform)\$(ProjectName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
